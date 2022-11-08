@@ -6,10 +6,12 @@
         <title>Dylan Westland: Home</title>
         <meta content="This is Dylan's website." name="description">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>      
-        <link rel="stylesheet" href="/styles.css">
-        </head>
+        <link href="/styles.css" rel="stylesheet" >
+        <link href="/accordion.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" >
+        <!-- <script src="/accordion.js"></script> -->
+      </head>
    <body>
         <div class = "page-container">
             <!-- Original nav was SharedNavigationBar_mobile -->
@@ -23,46 +25,189 @@
                     <li><a href="/about" class="nav-link">ABOUT</a></li>
                 </ul>
             </nav>
-            <h1>EXHIBITIONS</h1>
 
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+            <h1>EXHIBITIONS</h1>
+            <br/>
+
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><h3>PANEL 1</h3></div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+
+                <div class="video-responsive">
+                  <iframe
+                    title="YouTube Webcam"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/wnNrd-VjLsQ"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+
                 </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+              <div class="accordion__item js-accordion-item">
+              <!-- <div class="accordion__item js-accordion-item active"> -->
+                <div class="accordion-header js-accordion-header"><h3>PANEL 2</h3>
+                
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe nisi corporis recusandae, tempore voluptatem quas reprehenderit animi aut amet illum sed neque debitis enim voluptates labore dolorum aliquam accusantium!</p>
+                
+                </div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
                 </div>
-            </div>
-        </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+                <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><h3>PANEL 3</h3></div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+                 <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><h3>PANEL 4</h3></div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+                 <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><h3>PANEL 5</h3></div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+                 <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><h3>PANEL 6</h3></div> 
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                </div>
+                  <div class="accordion js-accordion">
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 1</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                    <div class="accordion__item js-accordion-item">
+                       <div class="accordion-header js-accordion-header">Sub Panel 2</div> 
+                       <div class="accordion-body js-accordion-body">
+                         <div class="accordion-body__contents">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi placeat distinctio dolor, amet magnam voluptatibus eos ex vero, sunt veritatis esse. Nostrum voluptatum et repudiandae vel sed, explicabo in?
+                         </div><!-- end of sub accordion item body contents -->
+                       </div><!-- end of sub accordion item body -->
+                    </div><!-- end of sub accordion item -->
+                  </div><!-- end of sub accordion -->
+                </div><!-- end of accordion body -->
+              </div><!-- end of accordion item -->
+            </div><!-- end of accordion -->
    </body>
+   <script src="/accordion.js"></script>
 </html>
